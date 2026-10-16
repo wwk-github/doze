@@ -1,0 +1,17 @@
+[package]
+name = "doze"
+version = "0.1.0"
+edition = "2024"
+description = "A drop-in replacement for sleep that can show dots or a countdown"
+license = "MIT"
+repository = "https://github.com/wwk-github/doze"
+readme = "README.md"
+keywords = ["sleep", "countdown", "timer", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+libc = "0.2"
+
+[profile.release]
+lto = true
+strip = true
