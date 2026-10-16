@@ -63,9 +63,14 @@ Rules:
   in `PATH`, e.g. `ln -s doze ~/.local/bin/sleep`. Error messages then start
   with `sleep:`, exactly like GNU sleep.
 
-## Build and install
+## Install
 
-Linux only. Needs Rust 1.85 or newer (edition 2024).
+Linux only.
+
+- With Cargo (Rust 1.85 or newer): `cargo install doze-cli` (the command is `doze`).
+- Prebuilt x86_64 binary: see [Releases](https://github.com/wwk-github/doze/releases).
+
+## Build from source
 
 ```sh
 git clone https://github.com/wwk-github/doze

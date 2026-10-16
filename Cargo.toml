@@ -1,13 +1,19 @@
 [package]
-name = "doze"
+name = "doze-cli"
 version = "0.1.0"
 edition = "2024"
-description = "A drop-in replacement for sleep that can show dots or a countdown"
+rust-version = "1.85"
+description = "sleep, but with one eye open: a drop-in replacement for sleep that can show dots or a live countdown while it dozes"
 license = "MIT"
 repository = "https://github.com/wwk-github/doze"
 readme = "README.md"
 keywords = ["sleep", "countdown", "timer", "cli"]
 categories = ["command-line-utilities"]
+exclude = ["assets/", "docs/"]
+
+[[bin]]
+name = "doze"
+path = "src/main.rs"
 
 [dependencies]
 libc = "0.2"
