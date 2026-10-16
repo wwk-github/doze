@@ -2,6 +2,8 @@
 
 A `sleep` that can keep one eye open.
 
+![doze demo: silent sleep, dots, countdown with end time, countdown with tenths](assets/demo.gif)
+
 Without display options `doze` is a drop-in replacement for GNU `sleep`: same
 arguments (`30`, `1.5`, `2m`, `1h`, `1d`, `infinity`, several values summed),
 no output, same exit codes and the same error messages for ordinary input. On request it shows that it is
